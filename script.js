@@ -299,7 +299,7 @@
         desc: 'A responsive particle field that breathes with the viewer.',
         thumbnail: 'assets/images/flow.png',
         videoUrl: 'assets/videos/drift.mp4',
-        externalUrl: 'https://flowstate.vercel.app',
+        externalUrl: 'https://flowstate-alpha-five.vercel.app',
         externalLabel: 'Try the Live Demo',
         hueA: '#2f6bff', hueB: '#ff9b3d',
         overview: 'A live interactive experience where the viewer shapes the composition.',
