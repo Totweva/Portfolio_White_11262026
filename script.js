@@ -224,7 +224,7 @@
         outcome: 'A modular body of work that can be recombined endlessly.'
       },
       {
-        id: 'form',
+        id: 'Amina',
         title: 'Brand & Motion Identity - Amina',
         category: 'design',
         catLabel: 'Design',
@@ -241,7 +241,7 @@
         outcome: 'A flexible identity toolkit ready for real-world application.'
       },
       {
-        id: 'form',
+        id: 'alte-vove',
         title: 'Brand & Motion Identity - Alte-Vove Project',
         category: 'design',
         catLabel: 'Design',
@@ -276,7 +276,7 @@
       },
       {
         id: 'ripple',
-        title: 'Ripple',
+        title: 'Sustainability Motion Design',
         category: 'storytelling',
         catLabel: 'Storytelling',
         desc: 'A visual narrative about small actions with far-reaching consequences.',
