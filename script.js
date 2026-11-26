@@ -139,7 +139,7 @@
         outcome: 'A looping sequence that communicates mood purely through movement.'
       },
       {
-        id: 'Brand-Identity',
+        id: 'Character-Design-Illustration',
         title: 'Character Design & Illustration',
         category: 'illustration',
         catLabel: 'Illustration',
@@ -156,14 +156,14 @@
         outcome: 'A modular body of work that can be recombined endlessly.'
       },
       {
-        id: 'Brand-Identity',
-        title: 'Character Design & Illustration',
+        id: 'Illustration-Mother-Child',
+        title: 'Character Design & Illustration - Mother and Child',
         category: 'illustration',
         catLabel: 'Illustration',
         desc: 'A procedural illustration series exploring organic growth and colour.',
-        thumbnail: 'assets/images/illustration.png',
+        thumbnail: 'assets/images/mother.png',
         videoUrl: '',
-        externalUrl: 'https://www.behance.net/gallery/138539345/Concept-Illustration-Chieafugo-An-Animation-Project',
+        externalUrl: 'https://www.behance.net/gallery/146080139/Mother-Illustration-Concept',
         externalLabel: 'View Illustrations on Behance',
         hueA: '#ff9b3d', hueB: '#ffcf94',
         overview: 'A generative illustration series made with layered gradients and SVG forms.',
@@ -246,7 +246,7 @@
         category: 'design',
         catLabel: 'Design',
         desc: 'Conceptualization and design of brand avatar, customized for the African market, and animation of Educational Videos.',
-        thumbnail: 'assets/images/accion.png',
+        thumbnail: 'assets/images/vove.png',
         videoUrl: '',
         externalUrl: 'https://drive.google.com/drive/folders/17v8kEAYr_73Mh9yla-b3j3EBs5ePWo3R?usp=sharing',
         externalLabel: 'Learn more about the project',
