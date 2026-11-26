@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code (optional — remove if you want to commit settings)
+.vscode/
+
+# Node (not used here, but safe)
+node_modules/

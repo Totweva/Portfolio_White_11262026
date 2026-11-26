@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kenneth Ojimba — Design. Motion. Imagination.</title>
+<meta name="description" content="Kenneth Ojimba is a multidisciplinary creative working at the intersection of design, animation, storytelling and creative technology." />
+<meta name="theme-color" content="#f6f4ef" />
+<meta property="og:title" content="Kenneth Ojimba — Creative Portfolio" />
+<meta property="og:description" content="Design. Motion. Imagination. An immersive creative portfolio." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f6bff'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Space Grotesk,sans-serif' font-size='26' font-weight='700' fill='white'%3EKO%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ░░░ PRELOADER ░░░ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <svg class="preloader-mono" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(47,107,255,0.18)" stroke-width="1"/>
+      <circle cx="60" cy="60" r="52" fill="none" stroke="#2f6bff" stroke-width="2"
+              stroke-dasharray="326.7" stroke-dashoffset="326.7" id="preRing"/>
+      <path d="M38 32 V88 M38 32 L82 60 L38 88" stroke="#12151c" stroke-width="6"
+            fill="none" stroke-linecap="round" stroke-linejoin="round" id="preK"/>
+      <circle cx="84" cy="60" r="10" fill="none" stroke="#ff9b3d" stroke-width="4" id="preO"/>
+    </svg>
+    <div class="preloader-label">KENNETH OJIMBA</div>
+    <div class="preloader-bar"><span id="preBar"></span></div>
+  </div>
+</div>
+
+<!-- ░░░ FOG CANVAS ░░░ -->
+<canvas id="fog-canvas" aria-hidden="true"></canvas>
+
+<!-- ░░░ FLOATING GLASS NAV ░░░ -->
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav glass" aria-label="Primary">
+    <a href="#home" class="nav-logo" aria-label="Kenneth Ojimba home">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+        <path d="M6 5 V27 M6 5 L22 16 L6 27" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="23" cy="16" r="4.2" fill="none" stroke="#ff9b3d" stroke-width="2.6"/>
+      </svg>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#works" class="nav-link">Works</a></li>
+      <li><a href="#lab" class="nav-link">Creative Lab</a></li>
+      <li><a href="#process" class="nav-link">Process</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle appearance">
+        <span class="theme-icon sun">☀</span><span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ░░░ HERO ░░░ -->
+<section id="home" class="hero">
+  <canvas id="particle-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-bg-shapes" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+    <svg class="orbit orbit-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="92" fill="none" stroke="rgba(47,107,255,0.25)" stroke-dasharray="2 6"/></svg>
+    <svg class="orbit orbit-2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="70" fill="none" stroke="rgba(255,155,61,0.28)" stroke-dasharray="2 6"/></svg>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">Creative Portfolio · 2025</p>
+    <h1 class="hero-title">
+      <span class="line">KENNETH</span>
+      <span class="line accent">OJIMBA</span>
+    </h1>
+    <p class="hero-sub reveal">Design. Motion. Imagination.</p>
+    <p class="hero-desc reveal">
+      I transform ideas into meaningful visual experiences through design,
+      animation, storytelling and creative problem-solving.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#works" class="btn btn-primary magnetic">Explore My Work</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Let's Create Together</a>
+    </div>
+    <div class="hero-icons" aria-hidden="true">
+      <span class="chip">✏ Illustration</span>
+      <span class="chip">◎ Animation</span>
+      <span class="chip">◈ Design</span>
+      <span class="chip">✦ Storytelling</span>
+      <span class="chip">⚡ Creative Tech</span>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+    <span class="scroll-line"></span>
+    <span class="scroll-label">SCROLL</span>
+  </a>
+</section>
+
+<!-- ░░░ ABOUT ░░░ -->
+<section id="about" class="section about">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">About</span>
+      <h2 class="section-title">Multidisciplinary by design.<br><span class="accent">Human by intention.</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-portrait" data-parallax="0.05">
+        <div class="portrait-frame glass">
+          <!-- Replace with <img src="assets/images/portrait.jpg" alt="Portrait of Kenneth Ojimba"> when you have one -->
+          <div class="portrait-procedural" aria-label="Abstract portrait placeholder">
+            <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#2f6bff" stop-opacity="0.9"/>
+                  <stop offset="55%" stop-color="#8a9bff" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#ff9b3d" stop-opacity="0.75"/>
+                </linearGradient>
+                <radialGradient id="pg2" cx="0.3" cy="0.3" r="0.8">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="400" height="500" fill="url(#pg)"/>
+              <circle cx="130" cy="150" r="90" fill="url(#pg2)"/>
+              <path d="M0 400 Q 100 320 200 380 T 400 340 L 400 500 L 0 500 Z" fill="rgba(18,21,28,0.55)"/>
+              <path d="M0 440 Q 140 380 240 430 T 400 400" stroke="rgba(255,255,255,0.4)" fill="none" stroke-width="1.5"/>
+              <circle cx="290" cy="120" r="30" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+              <circle cx="290" cy="120" r="12" fill="#ff9b3d"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="lead reveal">
+          I am a multidisciplinary creative working at the intersection of design,
+          animation, storytelling and technology. My approach combines artistic
+          intuition with design thinking to transform complex ideas into meaningful,
+          engaging and visually compelling experiences.
+        </p>
+
+        <div class="skills-grid">
+          <button class="skill-card glass" data-skill="anim">
+            <span class="skill-ico">◎</span><span class="skill-name">Animation & Motion</span>
+          </button>
+          <button class="skill-card glass" data-skill="ill">
+            <span class="skill-ico">✏</span><span class="skill-name">Illustration</span>
+          </button>
+          <button class="skill-card glass" data-skill="story">
+            <span class="skill-ico">✦</span><span class="skill-name">Visual Storytelling</span>
+          </button>
+          <button class="skill-card glass" data-skill="design">
+            <span class="skill-ico">◈</span><span class="skill-name">Graphic Design</span>
+          </button>
+          <button class="skill-card glass" data-skill="think">
+            <span class="skill-ico">◇</span><span class="skill-name">Design Thinking</span>
+          </button>
+          <button class="skill-card glass" data-skill="solve">
+            <span class="skill-ico">⌘</span><span class="skill-name">Creative Problem-Solving</span>
+          </button>
+          <button class="skill-card glass" data-skill="tech">
+            <span class="skill-ico">⚡</span><span class="skill-name">Creative Technology</span>
+          </button>
+          <button class="skill-card glass" data-skill="inter">
+            <span class="skill-ico">◐</span><span class="skill-name">Interactive Experiences</span>
+          </button>
+        </div>
+
+        <blockquote class="philosophy glass">
+          “Design is not decoration. It is the practice of listening to a problem
+          until it reveals its most honest form — then giving that form motion,
+          meaning and life.”
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ WORKS ░░░ -->
+<section id="works" class="section works">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Selected Works</span>
+      <h2 class="section-title">Experiments in <span class="accent">form & feeling.</span></h2>
+      <p class="section-sub">A living archive of original procedural demonstrations — ready to be replaced with real projects.</p>
+    </div>
+
+    <div class="filter-bar glass" role="tablist" aria-label="Project filters">
+      <button class="filter active" data-filter="all">All Works</button>
+      <button class="filter" data-filter="animation">Animation</button>
+      <button class="filter" data-filter="illustration">Illustration</button>
+      <button class="filter" data-filter="design">Design</button>
+      <button class="filter" data-filter="storytelling">Storytelling</button>
+      <button class="filter" data-filter="interactive">Interactive</button>
+      <button class="filter" data-filter="experiments">Experiments</button>
+    </div>
+
+    <div class="works-grid" id="worksGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ░░░ PROJECT MODAL ░░░ -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-shell glass" role="document">
+    <button class="modal-close" id="modalClose" aria-label="Close project">✕</button>
+    <div class="modal-hero" id="modalHero"></div>
+    <div class="modal-body">
+      <span class="modal-cat" id="modalCat"></span>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-sections">
+        <div><h4>Overview</h4><p id="modalOverview"></p></div>
+        <div><h4>Objective</h4><p id="modalObjective"></p></div>
+        <div><h4>Challenge</h4><p id="modalChallenge"></p></div>
+        <div><h4>Process</h4><p id="modalProcess"></p></div>
+        <div><h4>Outcome</h4><p id="modalOutcome"></p></div>
+      </div>
+      <div class="modal-nav">
+        <button id="modalPrev" class="btn btn-ghost">← Previous</button>
+        <button id="modalNext" class="btn btn-ghost">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ░░░ CREATIVE LAB ░░░ -->
+<section id="lab" class="section lab">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Creative Lab</span>
+      <h2 class="section-title">Where art meets <span class="accent">the machine.</span></h2>
+      <p class="section-sub">Five live experiments — fully interactive, fully yours.</p>
+    </div>
+
+    <div class="lab-grid">
+
+      <!-- 1. Particle Playground -->
+      <article class="lab-card glass">
+        <header class="lab-head">
+          <h3>Particle Playground</h3>
+          <span class="lab-tag">01</span>
+        </header>
+        <canvas class="lab-canvas" id="labParticles" aria-label="Interactive particle field"></canvas>
+        <p class="lab-desc">Move your cursor through the field to attract particles. Drag the slider to control speed.</p>
+        <div class="lab-controls">
+          <label>Speed<input type="range" id="labPSpeed" min="0.2" max="2.5" step="0.1" value="1.2"></label>
+          <button class="btn-mini" id="labPReset">Reset</button>
+        </div>
+      </article>
+
+      <!-- 2. Motion Playground -->
+      <article class="lab-card glass">
+        <header class="lab-head">
+          <h3>Motion Playground</h3>
+          <span class="lab-tag">02</span>
+        </header>
+        <div class="lab-motion-stage" id="labMotionStage">
+          <div class="motion-ball" id="motionBall"></div>
+          <div class="motion-ground"></div>
+        </div>
+        <p class="lab-desc">Click to drop the ball. Feel squash, stretch and easing in real time.</p>
+        <div class="lab-controls">
+          <label>Easing
+            <select id="labEase">
+              <option value="cubic-bezier(0.16,1,0.3,1)">Ease Out Expo</option>
+              <option value="cubic-bezier(0.34,1.56,0.64,1)">Back Out</option>
+              <option value="cubic-bezier(0.68,-0.55,0.27,1.55)">Anticipate</option>
+            </select>
+          </label>
+          <button class="btn-mini" id="labMDrop">Drop</button>
+        </div>
+      </article>
+
+      <!-- 3. Generative Art -->
+      <article class="lab-card glass">
+        <header class="lab-head">
+          <h3>Generative Art</h3>
+          <span class="lab-tag">03</span>
+        </header>
+        <canvas class="lab-canvas" id="labGenArt" aria-label="Generative artwork"></canvas>
+        <p class="lab-desc">Procedural compositions drawn live. Regenerate to explore endless variations.</p>
+        <div class="lab-controls">
+          <button class="btn-mini" id="labGRegen">Regenerate</button>
+        </div>
+      </article>
+
+      <!-- 4. Interactive Geometry -->
+      <article class="lab-card glass">
+        <header class="lab-head">
+          <h3>Interactive Geometry</h3>
+          <span class="lab-tag">04</span>
+        </header>
+        <canvas class="lab-canvas" id="labGeo" aria-label="Interactive geometric composition"></canvas>
+        <p class="lab-desc">Move your pointer — the geometry leans toward you. Click to cycle palettes.</p>
+        <div class="lab-controls">
+          <button class="btn-mini" id="labGeoPalette">Palette</button>
+        </div>
+      </article>
+
+      <!-- 5. Color Playground -->
+      <article class="lab-card glass">
+        <header class="lab-head">
+          <h3>Color Playground</h3>
+          <span class="lab-tag">05</span>
+        </header>
+        <div class="palette-strip" id="paletteStrip"></div>
+        <p class="lab-desc">Tap any swatch to copy its HEX. Generate a fresh palette any time.</p>
+        <div class="lab-controls">
+          <button class="btn-mini" id="labPalGen">New Palette</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ PROCESS ░░░ -->
+<section id="process" class="section process">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Creative Process</span>
+      <h2 class="section-title">Eight stages, <span class="accent">one intention.</span></h2>
+      <p class="section-sub">Click any stage to see how the work moves from question to experience.</p>
+    </div>
+
+    <div class="process-timeline" id="processTimeline" role="tablist" aria-label="Creative process stages">
+      <!-- stages injected by JS -->
+    </div>
+
+    <div class="process-detail glass" id="processDetail" aria-live="polite">
+      <span class="process-num" id="procNum">01</span>
+      <h3 id="procTitle">Discover</h3>
+      <p id="procDesc">Research and understand the challenge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ SERVICES ░░░ -->
+<section id="services" class="section services">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Services</span>
+      <h2 class="section-title">What I bring <span class="accent">to the table.</span></h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service glass"><span class="svc-ico">◎</span><h3>Animation & Motion Design</h3><p>Bringing stories to life through considered timing, rhythm and movement.</p></article>
+      <article class="service glass"><span class="svc-ico">✏</span><h3>Illustration & Concept Development</h3><p>Original visual ideas that give a project its first heartbeat.</p></article>
+      <article class="service glass"><span class="svc-ico">◈</span><h3>Visual Identity & Graphic Design</h3><p>Cohesive visual systems that make a brand feel inevitable.</p></article>
+      <article class="service glass"><span class="svc-ico">✦</span><h3>Storytelling & Visual Development</h3><p>Turning narrative intent into sequences that resonate.</p></article>
+      <article class="service glass"><span class="svc-ico">◐</span><h3>Creative Direction</h3><p>Guiding the visual and conceptual arc of a project end to end.</p></article>
+      <article class="service glass"><span class="svc-ico">◇</span><h3>Design Thinking & Strategy</h3><p>Using empathic, structured problem-solving to shape direction.</p></article>
+      <article class="service glass"><span class="svc-ico">⚡</span><h3>Interactive Digital Experiences</h3><p>Playful, responsive interfaces that reward curiosity.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ CONTACT ░░░ -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Contact</span>
+      <h2 class="section-title">Let's make something <span class="accent">meaningful.</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <form class="contact-form glass" id="contactForm" novalidate>
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" id="cfName" required minlength="2" placeholder="Your name">
+          <small class="err" data-for="cfName"></small>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" id="cfEmail" required placeholder="you@example.com">
+          <small class="err" data-for="cfEmail"></small>
+        </label>
+        <label class="field">
+          <span>Project Type</span>
+          <select name="type" id="cfType" required>
+            <option value="">Select…</option>
+            <option>Animation & Motion</option>
+            <option>Illustration</option>
+            <option>Visual Identity</option>
+            <option>Storytelling</option>
+            <option>Interactive Experience</option>
+            <option>Other</option>
+          </select>
+          <small class="err" data-for="cfType"></small>
+        </label>
+        <label class="field">
+          <span>Project Description</span>
+          <textarea name="desc" id="cfDesc" rows="4" required minlength="10" placeholder="Tell me a little about the project…"></textarea>
+          <small class="err" data-for="cfDesc"></small>
+        </label>
+        <button type="submit" class="btn btn-primary magnetic">Send via Email</button>
+        <p class="form-note">This form opens your email client with the message pre-filled. Nothing is sent to a server — this is a static GitHub Pages site.</p>
+        <div class="form-status" id="formStatus" aria-live="polite"></div>
+      </form>
+
+      <aside class="contact-side">
+        <div class="contact-card glass">
+          <h3>Direct</h3>
+          <button class="copy-email" id="copyEmail" data-email="hello@example.com">
+            <span id="emailText">hello@example.com</span>
+            <span class="copy-hint">Click to copy</span>
+          </button>
+          <p class="muted">Replace this placeholder with your real address in <code>script.js</code> and here.</p>
+        </div>
+
+        <div class="contact-card glass">
+          <h3>Elsewhere</h3>
+          <ul class="socials" id="socials">
+            <!-- URLs configurable in script.js -->
+            <li><a href="#" data-social="behance" rel="https://www.behance.net/thethoughtweaver">Behance ↗</a></li>
+            <li><a href="#" data-social="instagram" rel="https://www.instagram.com/kenny_thethoughtweaver">Instagram ↗</a></li>
+            <li><a href="#" data-social="linkedin" rel="https://www.linkedin.com/in/kenny-ojimba">LinkedIn ↗</a></li>
+            <li><a href="#" data-social="dribbble" rel="https://dribbble.com/thoughtweaver">Dribbble ↗</a></li>
+          </ul>
+        </div>
+
+        <button class="back-top btn btn-ghost" id="backTop">↑ Back to top</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ FOOTER ░░░ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+        <path d="M6 5 V27 M6 5 L22 16 L6 27" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="23" cy="16" r="4.2" fill="none" stroke="#ff9b3d" stroke-width="2.6"/>
+      </svg>
+      <span>Kenneth Ojimba</span>
+    </div>
+    <p class="footer-tag">Where imagination meets purpose.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#works">Works</a><a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="year">2025</span> Kenneth Ojimba. All original procedural artwork on this site is generated in the browser.</p>
+  </div>
+</footer>
+
+<!-- ░░░ SCROLL PROGRESS ░░░ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ░░░ CUSTOM CURSOR (desktop only, applied via JS) ░░░ -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
