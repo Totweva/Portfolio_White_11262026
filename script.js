@@ -20,7 +20,7 @@
     // with real projects later — the structure stays the same.
     projects: [
       {
-        id: 'echoes', title: 'Echoes of Motion', category: 'animation',
+        id: 'echoes', title: 'Showreel 2026', category: 'Motion Design',
         catLabel: 'Animation',
         desc: 'A short motion study exploring rhythm through repeating abstract forms.',
         hueA: '#2f6bff', hueB: '#8a9bff',
@@ -31,18 +31,18 @@
         outcome: 'A looping sequence that communicates mood purely through movement.'
       },
       {
-        id: 'bloom', title: 'The Bloom Series', category: 'illustration',
-        catLabel: 'Illustration',
-        desc: 'A procedural illustration series exploring organic growth and colour.',
+        id: 'bloom', title: 'Showreel 2D animation', category: 'Animation',
+        catLabel: 'Animation',
+        desc: 'A procedural Animation series exploring organic growth and colour.',
         hueA: '#ff9b3d', hueB: '#ffcf94',
-        overview: 'A generative illustration series made with layered gradients and SVG forms.',
+        overview: 'A generative Animation series made with layered gradients and SVG forms.',
         objective: 'Use procedural tools to create intimate, organic-feeling artwork.',
         challenge: 'Balancing randomness with compositional intention.',
         process: 'Wrote small scripts to vary composition, then curated the strongest results.',
         outcome: 'A modular body of work that can be recombined endlessly.'
       },
       {
-        id: 'form', title: 'Form & Function', category: 'design',
+        id: 'form', title: 'Concept Illustrations', category: 'design & illustration',
         catLabel: 'Design',
         desc: 'A visual identity study built around geometric reduction.',
         hueA: '#12151c', hueB: '#3d4451',
@@ -53,7 +53,40 @@
         outcome: 'A flexible identity toolkit ready for real-world application.'
       },
       {
-        id: 'ripple', title: 'Ripple', category: 'storytelling',
+        id: 'form', title: 'K12 Refresh', category: 'Motion Design',
+        catLabel: 'Animation',
+        desc: 'A visual identity created for Ulesson K12 rebranding.',
+        hueA: '#12151c', hueB: '#3d4451',
+        overview: 'An exploration of identity systems reduced to essential geometric forms.',
+        objective: 'Design a modular mark that adapts to multiple contexts.',
+        challenge: 'Maintaining recognisability at small and large scales.',
+        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
+        outcome: 'A flexible identity toolkit ready for real-world application.'
+      },
+      {
+        id: 'form', title: 'NIA Promo Concept', category: 'Motion Design',
+        catLabel: 'Animation',
+        desc: 'A visual identity created for NIA University marketing campaign',
+        hueA: '#12151c', hueB: '#3d4451',
+        overview: 'An exploration of identity systems reduced to essential geometric forms.',
+        objective: 'Design a modular mark that adapts to multiple contexts.',
+        challenge: 'Maintaining recognisability at small and large scales.',
+        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
+        outcome: 'A flexible identity toolkit ready for real-world application.'
+      },
+      {
+        id: 'form', title: 'Hackathon Project', category: 'Motion Design',
+        catLabel: 'Animation',
+        desc: 'A visual design for the Hackathon 2026 event branding and marketing campaign.',
+        hueA: '#12151c', hueB: '#3d4451',
+        overview: 'An exploration of identity systems reduced to essential geometric forms.',
+        objective: 'Design a modular mark that adapts to multiple contexts.',
+        challenge: 'Maintaining recognisability at small and large scales.',
+        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
+        outcome: 'A flexible identity toolkit ready for real-world application.'
+      },
+      {
+        id: 'ripple', title: 'Brand Identity', category: 'storytelling',
         catLabel: 'Storytelling',
         desc: 'A visual narrative about small actions with far-reaching consequences.',
         hueA: '#9b7bff', hueB: '#c9b8ff',
@@ -64,7 +97,7 @@
         outcome: 'A short poetic sequence that lingers after watching.'
       },
       {
-        id: 'drift', title: 'Drift', category: 'interactive',
+        id: 'drift', title: 'Drift', category: 'interactive Simulations',
         catLabel: 'Interactive',
         desc: 'A responsive particle field that breathes with the viewer.',
         hueA: '#2f6bff', hueB: '#ff9b3d',
