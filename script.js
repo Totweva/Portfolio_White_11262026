@@ -11,18 +11,24 @@
   const CONFIG = {
     email: 'Totweva@gmail.com',       // ← your real email
     socials: {
-      behance:   'https://www.behance.net/thethoughtweaver',                  // e.g. 'https://behance.net/yourname'
-      instagram: 'https://www.instagram.com/kenny_thethoughtweaver',
-      linkedin:  'https://www.linkedin.com/in/kenny-ojimba',
+      behance:   'https://behance.net/thethoughtweaver',                  // e.g. 'https://behance.net/yourname'
+      instagram: 'https://instagram.com/kenny_thethoughtweaver',
+      linkedin:  'https://linkedin.com/in/Kenny-Ojimba',
       dribbble:  'https://dribbble.com/thoughtweaver',
     },
-    // Fictional / procedural project archive. Replace thumbnails/descriptions
-    // with real projects later — the structure stays the same.
+    // Fictional / procedural project archive.
+    // Replace thumbnails, videos, external URLs and descriptions with real work later.
     projects: [
       {
-        id: 'echoes', title: 'Showreel 2026', category: 'Motion Design',
+        id: 'echoes',
+        title: 'Echoes of Motion',
+        category: 'animation',
         catLabel: 'Animation',
         desc: 'A short motion study exploring rhythm through repeating abstract forms.',
+        thumbnail: 'assets/images/echoes-thumb.jpg',
+        videoUrl: 'assets/videos/echoes.mp4',
+        externalUrl: 'https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID',
+        externalLabel: 'Watch on Drive',
         hueA: '#2f6bff', hueB: '#8a9bff',
         overview: 'An original motion study created as a demonstration of rhythm, timing and parallax.',
         objective: 'Explore how simple geometric repetition can feel expressive and alive.',
@@ -31,20 +37,32 @@
         outcome: 'A looping sequence that communicates mood purely through movement.'
       },
       {
-        id: 'bloom', title: 'Showreel 2D animation', category: 'Animation',
-        catLabel: 'Animation',
-        desc: 'A procedural Animation series exploring organic growth and colour.',
+        id: 'bloom',
+        title: 'The Bloom Series',
+        category: 'illustration',
+        catLabel: 'Illustration',
+        desc: 'A procedural illustration series exploring organic growth and colour.',
+        thumbnail: 'assets/images/bloom-thumb.jpg',
+        videoUrl: '',
+        externalUrl: 'https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID',
+        externalLabel: 'View Illustrations on Drive',
         hueA: '#ff9b3d', hueB: '#ffcf94',
-        overview: 'A generative Animation series made with layered gradients and SVG forms.',
+        overview: 'A generative illustration series made with layered gradients and SVG forms.',
         objective: 'Use procedural tools to create intimate, organic-feeling artwork.',
         challenge: 'Balancing randomness with compositional intention.',
         process: 'Wrote small scripts to vary composition, then curated the strongest results.',
         outcome: 'A modular body of work that can be recombined endlessly.'
       },
       {
-        id: 'form', title: 'Concept Illustrations', category: 'design & illustration',
+        id: 'form',
+        title: 'Form & Function',
+        category: 'design',
         catLabel: 'Design',
         desc: 'A visual identity study built around geometric reduction.',
+        thumbnail: '',
+        videoUrl: '',
+        externalUrl: 'https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID',
+        externalLabel: 'View on Drive',
         hueA: '#12151c', hueB: '#3d4451',
         overview: 'An exploration of identity systems reduced to essential geometric forms.',
         objective: 'Design a modular mark that adapts to multiple contexts.',
@@ -53,42 +71,15 @@
         outcome: 'A flexible identity toolkit ready for real-world application.'
       },
       {
-        id: 'form', title: 'K12 Refresh', category: 'Motion Design',
-        catLabel: 'Animation',
-        desc: 'A visual identity created for Ulesson K12 rebranding.',
-        hueA: '#12151c', hueB: '#3d4451',
-        overview: 'An exploration of identity systems reduced to essential geometric forms.',
-        objective: 'Design a modular mark that adapts to multiple contexts.',
-        challenge: 'Maintaining recognisability at small and large scales.',
-        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
-        outcome: 'A flexible identity toolkit ready for real-world application.'
-      },
-      {
-        id: 'form', title: 'NIA Promo Concept', category: 'Motion Design',
-        catLabel: 'Animation',
-        desc: 'A visual identity created for NIA University marketing campaign',
-        hueA: '#12151c', hueB: '#3d4451',
-        overview: 'An exploration of identity systems reduced to essential geometric forms.',
-        objective: 'Design a modular mark that adapts to multiple contexts.',
-        challenge: 'Maintaining recognisability at small and large scales.',
-        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
-        outcome: 'A flexible identity toolkit ready for real-world application.'
-      },
-      {
-        id: 'form', title: 'Hackathon Project', category: 'Motion Design',
-        catLabel: 'Animation',
-        desc: 'A visual design for the Hackathon 2026 event branding and marketing campaign.',
-        hueA: '#12151c', hueB: '#3d4451',
-        overview: 'An exploration of identity systems reduced to essential geometric forms.',
-        objective: 'Design a modular mark that adapts to multiple contexts.',
-        challenge: 'Maintaining recognisability at small and large scales.',
-        process: 'Iterated on proportion grids, tested monochrome and full-colour variants.',
-        outcome: 'A flexible identity toolkit ready for real-world application.'
-      },
-      {
-        id: 'ripple', title: 'Brand Identity', category: 'storytelling',
+        id: 'ripple',
+        title: 'Ripple',
+        category: 'storytelling',
         catLabel: 'Storytelling',
         desc: 'A visual narrative about small actions with far-reaching consequences.',
+        thumbnail: 'assets/images/ripple-thumb.jpg',
+        videoUrl: 'assets/videos/ripple.mp4',
+        externalUrl: 'https://vimeo.com/REPLACE_WITH_YOUR_VIDEO_ID',
+        externalLabel: 'Watch on Vimeo',
         hueA: '#9b7bff', hueB: '#c9b8ff',
         overview: 'A wordless visual story told through expanding circular ripples.',
         objective: 'Communicate narrative through rhythm alone, with no text.',
@@ -97,9 +88,15 @@
         outcome: 'A short poetic sequence that lingers after watching.'
       },
       {
-        id: 'drift', title: 'Drift', category: 'interactive Simulations',
+        id: 'drift',
+        title: 'Drift',
+        category: 'interactive',
         catLabel: 'Interactive',
         desc: 'A responsive particle field that breathes with the viewer.',
+        thumbnail: 'assets/images/drift-thumb.jpg',
+        videoUrl: 'assets/videos/drift.mp4',
+        externalUrl: 'https://example.com/drift-live-demo',
+        externalLabel: 'Try the Live Demo',
         hueA: '#2f6bff', hueB: '#ff9b3d',
         overview: 'A live interactive experience where the viewer shapes the composition.',
         objective: 'Reward curiosity with responsive motion and light.',
@@ -108,9 +105,15 @@
         outcome: 'A living artwork that feels personal to every viewer.'
       },
       {
-        id: 'chroma', title: 'Chroma Lab', category: 'experiments',
+        id: 'chroma',
+        title: 'Chroma Lab',
+        category: 'experiments',
         catLabel: 'Experiments',
         desc: 'A playful testbed for colour relationships and harmonies.',
+        thumbnail: 'assets/images/chroma-thumb.jpg',
+        videoUrl: '',
+        externalUrl: 'https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID',
+        externalLabel: 'View on Drive',
         hueA: '#ff5c8a', hueB: '#ffc46b',
         overview: 'An exploratory tool for generating and testing colour palettes.',
         objective: 'Make colour exploration joyful and immediate.',
@@ -196,7 +199,6 @@
       }));
     }
 
-    // Active nav highlight via IntersectionObserver
     if ('IntersectionObserver' in window && sections.length) {
       const obs = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -379,6 +381,7 @@
      ---------------------------------------------------------- */
   function makeProjectSVG(p) {
     // Original procedural artwork (no external image needed).
+    // Only used when p.thumbnail AND p.videoUrl are both empty.
     return `
       <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${p.title} procedural artwork">
         <defs>
@@ -403,6 +406,35 @@
     if (!grid) return;
     const filters = $$('.filter');
 
+    /* Build a thumbnail — custom image first, then video, then SVG fallback */
+    function buildThumb(p) {
+      if (p.thumbnail) {
+        return `
+          <img
+            src="${p.thumbnail}"
+            alt="${p.title} thumbnail"
+            loading="lazy"
+            decoding="async"
+          >
+        `;
+      }
+      if (p.videoUrl) {
+        return `
+          <video
+            src="${p.videoUrl}"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="${p.title} preview"
+          ></video>
+        `;
+      }
+      return makeProjectSVG(p);
+    }
+
+    /* Render the grid */
     function render(filter = 'all') {
       grid.innerHTML = '';
       const list = CONFIG.projects.filter(p => filter === 'all' || p.category === filter);
@@ -411,22 +443,55 @@
         card.className = 'work-card';
         card.style.transitionDelay = (i * 40) + 'ms';
         card.dataset.id = p.id;
-        card.tabIndex = 0;
-        card.setAttribute('role', 'button');
-        card.setAttribute('aria-label', `Open project: ${p.title}`);
+
+        const hasImage = Boolean(p.thumbnail);
+        const hasVideo = Boolean(p.videoUrl);
+        const hasExternal = Boolean(p.externalUrl);
+
+        let thumbClass = 'work-thumb';
+        if (hasImage) thumbClass += ' is-image';
+        else if (hasVideo) thumbClass += ' is-video';
+
         card.innerHTML = `
-          <div class="work-thumb">${makeProjectSVG(p)}</div>
+          <div class="${thumbClass}">
+            ${buildThumb(p)}
+          </div>
           <div class="work-body">
             <div class="work-cat">${p.catLabel}</div>
             <h3 class="work-title">${p.title}</h3>
             <p class="work-desc">${p.desc}</p>
-            <span class="work-view">View Project</span>
+            <button class="work-view${hasExternal ? ' is-external' : ''}" type="button">
+              ${hasExternal ? (p.externalLabel || 'View Project') : 'View Details'}
+            </button>
           </div>
         `;
-        grid.appendChild(card);
-        requestAnimationFrame(() => card.classList.add('in'));
 
-        // Tilt on desktop
+        /* Thumbnail click → external link */
+        const thumb = card.querySelector('.work-thumb');
+        if (hasExternal) {
+          thumb.style.cursor = 'pointer';
+          thumb.setAttribute('role', 'link');
+          thumb.setAttribute('tabindex', '0');
+          thumb.setAttribute('aria-label', `Open full project: ${p.title}`);
+          thumb.addEventListener('click', () => {
+            window.open(p.externalUrl, '_blank', 'noopener');
+          });
+          thumb.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              window.open(p.externalUrl, '_blank', 'noopener');
+            }
+          });
+        }
+
+        /* View button → modal */
+        const viewBtn = card.querySelector('.work-view');
+        viewBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openProject(p.id);
+        });
+
+        /* Tilt on desktop */
         if (!isTouch()) {
           card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -436,13 +501,13 @@
           });
           card.addEventListener('mouseleave', () => { card.style.transform = ''; });
         }
-        card.addEventListener('click', () => openProject(p.id));
-        card.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(p.id); }
-        });
+
+        grid.appendChild(card);
+        requestAnimationFrame(() => card.classList.add('in'));
       });
     }
 
+    /* Filter buttons */
     filters.forEach(f => f.addEventListener('click', () => {
       filters.forEach(x => x.classList.remove('active'));
       f.classList.add('active');
@@ -451,18 +516,34 @@
 
     render('all');
 
-    // Modal state
+    /* ─────────────────────────────────────────────
+       Modal
+       ───────────────────────────────────────────── */
     const modal = $('#projectModal');
     const modalClose = $('#modalClose');
     const modalPrev = $('#modalPrev');
     const modalNext = $('#modalNext');
+    const modalExternal = $('#modalExternal');
     let currentId = null;
 
     function openProject(id) {
       const p = CONFIG.projects.find(x => x.id === id);
       if (!p) return;
       currentId = id;
-      $('#modalHero').innerHTML = makeProjectSVG(p);
+
+      /* Hero: custom thumbnail > video > SVG */
+      const heroEl = $('#modalHero');
+      if (p.thumbnail) {
+        heroEl.innerHTML = `<img src="${p.thumbnail}" alt="${p.title} full artwork" style="width:100%;height:100%;object-fit:cover;display:block;">`;
+      } else if (p.videoUrl) {
+        heroEl.innerHTML = `
+          <video src="${p.videoUrl}" autoplay muted loop playsinline
+                 aria-label="${p.title} full preview"></video>
+        `;
+      } else {
+        heroEl.innerHTML = makeProjectSVG(p);
+      }
+
       $('#modalCat').textContent = p.catLabel;
       $('#modalTitle').textContent = p.title;
       $('#modalDesc').textContent = p.desc;
@@ -471,17 +552,31 @@
       $('#modalChallenge').textContent = p.challenge;
       $('#modalProcess').textContent = p.process;
       $('#modalOutcome').textContent = p.outcome;
+
+      /* External button in modal */
+      if (modalExternal) {
+        if (p.externalUrl) {
+          modalExternal.href = p.externalUrl;
+          modalExternal.textContent = (p.externalLabel || 'View Full Project') + ' ↗';
+          modalExternal.style.display = '';
+        } else {
+          modalExternal.style.display = 'none';
+        }
+      }
+
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
-      modalClose.focus();
+      if (modalClose) modalClose.focus();
     }
+
     function closeModal() {
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
       currentId = null;
     }
+
     function navProject(dir) {
       if (!currentId) return;
       const idx = CONFIG.projects.findIndex(x => x.id === currentId);
@@ -590,7 +685,6 @@
     function doDrop() {
       ball.style.transition = `top 0.9s ${easing}, width 0.2s, height 0.2s, border-radius 0.2s`;
       ball.style.top = 'calc(100% - 60px)';
-      // Squash moment
       setTimeout(() => {
         ball.style.width = '58px'; ball.style.height = '34px'; ball.style.borderRadius = '50%';
       }, 750);
@@ -602,7 +696,6 @@
     }
     drop.addEventListener('click', doDrop);
     if (easeSel) easeSel.addEventListener('change', e => { easing = e.target.value; });
-    // Click stage to drop too
     const stage = $('#labMotionStage');
     if (stage) stage.addEventListener('click', doDrop);
   }
@@ -626,7 +719,6 @@
     function draw() {
       ctx.clearRect(0, 0, w, h);
       const palette = ['#2f6bff', '#ff9b3d', '#9b7bff', '#ff5c8a', '#12151c'];
-      // background wash
       const bg = ctx.createLinearGradient(0, 0, w, h);
       bg.addColorStop(0, palette[Math.floor(Math.random() * 2)]);
       bg.addColorStop(1, palette[Math.floor(Math.random() * palette.length)]);
@@ -644,7 +736,6 @@
         const cx = Math.random() * w, cy = Math.random() * h;
         const type = Math.floor(Math.random() * 3);
         if (type === 0) {
-          // concentric circles
           const n = 5 + Math.floor(Math.random() * 6);
           for (let i = 0; i < n; i++) {
             ctx.beginPath();
@@ -652,14 +743,12 @@
             ctx.stroke();
           }
         } else if (type === 1) {
-          // arcs
           for (let i = 0; i < 20; i++) {
             ctx.beginPath();
             ctx.arc(cx, cy, 30 + i * 12, Math.random() * Math.PI, Math.PI * (0.5 + Math.random()));
             ctx.stroke();
           }
         } else {
-          // grid of dots
           const gap = 14;
           for (let x = 0; x < w; x += gap) {
             for (let y = 0; y < h; y += gap) {
@@ -724,14 +813,12 @@
       const cx = w / 2 + (mx - 0.5) * 30;
       const cy = h / 2 + (my - 0.5) * 30;
 
-      // outer ring
       ctx.strokeStyle = pal[0];
       ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.arc(cx, cy, 70 + Math.sin(t) * 4, 0, Math.PI * 2);
       ctx.stroke();
 
-      // rotating triangles
       for (let i = 0; i < 3; i++) {
         const a = t + i * (Math.PI * 2 / 3);
         const x = cx + Math.cos(a) * 50;
@@ -751,7 +838,6 @@
       }
       ctx.globalAlpha = 1;
 
-      // center square
       ctx.save();
       ctx.translate(cx, cy);
       ctx.rotate(t * 0.5);
@@ -878,10 +964,10 @@
     $$('a[data-social]').forEach(a => {
       const key = a.dataset.social;
       const url = CONFIG.socials[key];
-      if (url) { a.href = url; a.target = '_blank'; }
+      if (url) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
       else {
         a.href = '#';
-        a.addEventListener('click', (e) => { e.preventDefault(); status.textContent = 'This social link has not been configured yet.'; });
+        a.addEventListener('click', (e) => { e.preventDefault(); if (status) status.textContent = 'This social link has not been configured yet.'; });
         a.style.opacity = '0.5';
         a.title = 'Not configured yet';
       }
@@ -890,12 +976,13 @@
     // Copy email
     const copyBtn = $('#copyEmail');
     if (copyBtn) {
-      $('#emailText').textContent = CONFIG.email;
+      const emailText = $('#emailText');
+      if (emailText) emailText.textContent = CONFIG.email;
       copyBtn.dataset.email = CONFIG.email;
       copyBtn.addEventListener('click', () => {
         navigator.clipboard && navigator.clipboard.writeText(CONFIG.email)
-          .then(() => { status.textContent = 'Email copied to clipboard.'; })
-          .catch(() => { status.textContent = 'Copy failed — please select and copy manually.'; });
+          .then(() => { if (status) status.textContent = 'Email copied to clipboard.'; })
+          .catch(() => { if (status) status.textContent = 'Copy failed — please select and copy manually.'; });
       });
     }
 
@@ -913,10 +1000,11 @@
         fields.forEach(f => {
           const el = document.getElementById(f.id);
           const err = document.querySelector(`.err[data-for="${f.id}"]`);
+          if (!el) return;
           if (!f.test(el.value)) { valid = false; if (err) err.textContent = f.msg; el.style.borderColor = '#d03850'; }
           else { if (err) err.textContent = ''; el.style.borderColor = ''; }
         });
-        if (!valid) { status.textContent = 'Please fix the highlighted fields.'; return; }
+        if (!valid) { if (status) status.textContent = 'Please fix the highlighted fields.'; return; }
 
         const name = $('#cfName').value.trim();
         const email = $('#cfEmail').value.trim();
@@ -925,7 +1013,7 @@
         const subject = encodeURIComponent(`New project enquiry — ${type}`);
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${type}\n\nProject Description:\n${desc}`);
         window.location.href = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
-        status.textContent = 'Opening your email client… If nothing happens, copy the address above.';
+        if (status) status.textContent = 'Opening your email client… If nothing happens, copy the address above.';
       });
     }
 

@@ -591,3 +591,61 @@ body.has-cursor .cursor-dot {
   html { scroll-behavior: auto; }
   .blob, .orbit { display: none; }
 }
+
+/* ============================================================
+   CHANGEABLE CARD THUMBNAIL
+   ============================================================ */
+
+/* Image thumbnail inside a card */
+.work-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease-out);
+}
+.work-card:hover .work-thumb img {
+  transform: scale(1.06);
+}
+
+/* Small "video" indicator still works on video-preview cards */
+.work-thumb.is-video::after {
+  content: '▶';
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--c-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  transition: transform var(--dur-2) var(--ease-out);
+}
+.work-card:hover .work-thumb.is-video::after {
+  transform: scale(1.15);
+}
+
+/* Optional "custom image" badge — delete this whole block if you don't want it */
+.work-thumb.is-image::before {
+  content: 'IMG';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--ff-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--c-blue);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  opacity: 0.7;
+}
